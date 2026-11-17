@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>KHADIMUL BASAR</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+<h1>KHADIMUL BASAR</h1>
+<p id="subtitle">Welcome Back!</p>
+
+<form id="authForm">
+<input id="name" type="text" placeholder="Full Name" class="hidden">
+<input id="address" type="text" placeholder="Your Address" class="hidden">
+
+<input id="phone" type="tel" placeholder="Mobile Number" required>
+<input id="password" type="password" placeholder="Password" required>
+
+<div id="confirmBox" class="hidden">
+<input id="confirmPassword" type="password" placeholder="Confirm Password">
+</div>
+
+<button id="submitBtn" type="submit">LOGIN</button>
+</form>
+
+<p id="message"></p>
+
+<p id="switchText">
+Don't have an account?
+<a href="#" id="switchBtn">Sign Up</a>
+</p>
+</div>
+
+<script type="module" src="firebase.js"></script>
+<script type="module" src="script.js"></script>
+</body>
+</html>
